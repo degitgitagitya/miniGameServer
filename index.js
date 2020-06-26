@@ -10,10 +10,8 @@ const server = http.createServer(app);
 const io = socketio(server);
 
 const router = require("./router");
-const { stat } = require("fs");
-const { use } = require("./router");
 
-let countDown = 5;
+let countDown = 3;
 
 io.on("connection", (socket) => {
   console.log("We have a new Connection!");
