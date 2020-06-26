@@ -38,7 +38,7 @@ io.on("connection", (socket) => {
         }
         countDown--;
         if (countDown === 0) {
-          countDown = 5;
+          countDown = 3;
 
           const newListUser = getUsersInRoom(room);
 
